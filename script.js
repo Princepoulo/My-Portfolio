@@ -1,25 +1,9 @@
-// Social media links data
-const socialLinks = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/jabulane-prince" },
-    { name: "GitHub", url: "https://github.com/jabulane" },
-    { name: "Twitter", url: "https://twitter.com/jabulane" },
-  ];
-  
-  // Function to display social links
-  function displaySocialLinks() {
-    const socialLinksContainer = document.getElementById('social-links');
-    socialLinksContainer.innerHTML = ''; // Clear existing content
-  
-    socialLinks.forEach(link => {
-      const anchor = document.createElement('a');
-      anchor.href = link.url;
-      anchor.target = "_blank";
-      anchor.textContent = link.name;
-      anchor.style.margin = "0 10px";
-      socialLinksContainer.appendChild(anchor);
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
     });
-  }
-  
-  // Call function to load links on page load
-  displaySocialLinks();
+  });
   

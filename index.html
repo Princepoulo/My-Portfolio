@@ -1,131 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jabulane Prince - Software Development Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="light-theme">
-  
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button onclick="toggleTheme()">Toggle Theme</button>
-  </nav>
-
-  <!-- Introduction Section -->
-  <section id="about">
-    <div class="container">
-      <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
-      <h1>Jabulane Prince</h1>
-      <p>Software Developer with a passion for creating innovative solutions and scalable software. Skilled in C#, Java, and JavaScript.</p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills & Technologies</h2>
-      <ul class="skills-list">
-        <li>C#</li>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>HTML & CSS</li>
-        <li>React</li>
-        <li>SQL</li>
-        <li>C++</li>
-        <li>Python</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project" onclick="openModal('project1-modal')" data-project-id="project1-modal">
-        <img src="assets/project1.jpg" alt="E-commerce Platform">
-        <h3>Project 1</h3>
-        <p>An e-commerce Platfrom with feature like product listings,user authentication,   
-          shoping chart,and a recommendationn engine that suggests products based on user behaviors
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Reponsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">
+        <span>Jabulane Poulo</span>
+      </a>
+      <box-icon name='menu' id="menu-icon"></box-icon>
+      
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>  
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, it's <span>Poulo</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>
+          I'm a freelance graphic designer and web developer. I specialize in creating engaging and visually appealing websites. Please take a look at my work and let's connect!
         </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn">Hire</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
       </div>
-      <div class="project" onclick="openModal('project2-modal')" data-project-id="project2-modal">
-        <img src="assets/project2.jpg" alt="Online Learning Platform">
-        <h3>Project 2</h3>
-        <p>A brief description of the project, its purpose, and the technology stack used.</p>
+      <div class="home-img">
+        <img src="assets/profile.jpg" alt="Profile Picture">
       </div>
-    </div>
-  </section>
+    </section>
+      <section class="education" id="education" >
+        <h2 class="heading">Education</h2>
+        <div class="timeline-item">
+          <div class="timeline-it">
+            <div class="timeline-dot"></div>
+              <div class="timeline-date"> 2025</div>
+              <div class="timeline-content">
+                <h3>Bachelor's of Science in Infomation technology</h3>
+                
+                <p>North West Unversity 
+                  
+                </p>
+  
+              </div>
+  
+  
+            
+  
+  
+          </div>
+          <div class="timeline-it">
+            <div class="timeline-dot"> </div>
+              <div class="timeline-date">2022</div>
+              <div class="timeline-content">
+                <h3>Bachelor's Degree</h3>
+                
+                <p>Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit. Sed et consectetur ex.
+                    Donec vel velit vel sapien tristique maximus.</p>
+  
+              </div>
+  
+  
+           
+  
+  
+          </div>
+  
+  
+        </div>
+  
+      </section>
+        
+      <section class="experience" id="experience">
+        <h2 class="heading">Experience</h2>
+        <div class="experience-container">
+          <div class="experience-box">
+            <div class="experience-info">
+              <h4>Freelance Designer</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur ex. Donec vel velit vel sapien tristique maximus.</p>
+            </div>
+          </div>
+          <div class="experience-box">
+            <div class="experience-info">
+              <h4>Backend Developer</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur ex. Donec vel velit vel sapien tristique maximus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <section class="testimonials" id="testimonials">
+      <h2 class="heading">Testimonials</h2>
+      <div class="wrapper">
+        <div class="testimonials-item">
+          <img src="assets/n.jpg" alt="">
+          <h2>Personal Finance</h2>
+          <div class="rating">
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur ex. 
+            Donec vel velit vel sapien tristique maximus.</p>
+        </div>
+        <div class="testimonials-item">
+          <img src="assets/project2.jpg" alt="">
+          <h2>E Learning Application</h2>
+          <div class="rating">
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur ex. 
+            Donec vel velit vel sapien tristique maximus.</p>
+        </div>
+        <div class="testimonials-item">
+          <img src="assets/project1.jpg" alt="">
+          <h2>E-commerce Application</h2>
+          <div class="rating">
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+            <box-icon name='star' id="star"></box-icon>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur ex. 
+            Donec vel velit vel sapien tristique maximus.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact  <span>Me</span></h2>
+      <form action="">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="" placeholder="Full Name">
+            <input type="email" placeholder="email">
 
-  <!-- Modals for Project Details -->
-  <div id="project1-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('project1-modal')">&times;</span>
-      <h3>Project 1</h3>
-      <p>More details about Project 1, its functionalities, and technologies used.</p>
-    </div>
-  </div>
-  <div id="project2-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('project2-modal')">&times;</span>
-      <h3>Project 2</h3>
-      <p>More details about Project 2, its functionalities, and technologies used.</p>
-    </div>
-  </div>
+            
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone number">
+            <input type="text" placeholder="Subject">
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Write your message..."></textarea>
+          <input type="submit" value="Send Message" class="btn">
+        </div>
+        </div>
+      </form>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:paulompho3@gmail.com">paulompho3@gmail.com</a></p>
-      <div id="social-links"></div>
-    </div>
-  </section>
+     
 
-  <!-- JavaScript for Social Links and Modal Functionality -->
-  <script>
-    // Social Links
-    const socialLinks = [
-      { name: "LinkedIn", url: "https://www.linkedin.com/in/jabulane-prince" },
-      { name: "GitHub", url: "https://github.com/jabulane" },
-      { name: "Twitter", url: "https://twitter.com/jabulane" },
-    ];
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.facebook.com" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="bx bxl-linkedin"></i></a>
+     
 
-    function displaySocialLinks() {
-      const socialLinksContainer = document.getElementById('social-links');
-      socialLinksContainer.innerHTML = '';
-      socialLinks.forEach(link => {
-        const anchor = document.createElement('a');
-        anchor.href = link.url;
-        anchor.target = "_blank";
-        anchor.textContent = link.name;
-        anchor.style.margin = "0 10px";
-        socialLinksContainer.appendChild(anchor);
-      });
-    }
-    displaySocialLinks();
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Experience</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">testimonials</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        @JabulanePrince
+      </p>
 
-    // Modal Functions
-    function openModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
-    function closeModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
+    </footer>
+    <script src="script.js"></script>
+  </body>
 
-    // Theme Toggle
-    function toggleTheme() {
-      document.body.classList.toggle('dark-theme');
-    }
-  </script>
-
-</body>
 </html>
