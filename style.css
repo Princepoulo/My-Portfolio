@@ -136,7 +136,7 @@ span{
               0 0 100px var(--main-color);
 }
 .home-content p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.8;
   max-width: 1000px;
@@ -617,3 +617,222 @@ contact form{
     max-width: 90%; /* Adds padding from screen edges */
   }
 }
+@media(max-width:1285px){
+  html{
+    font-size: 55%;
+    
+  }
+  .experience-container{
+    padding-bottom:7rem ;
+    grid-template-columns: repeat(2,1fr);
+    margin:0 5rem;
+  }
+}
+@media(max-width:991px){
+  header{
+    
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .btn-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    
+      .experience-container {
+        grid-template-columns: 1fr; /* Single-column layout */
+      }
+    }
+    
+
+  }
+
+
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .btn-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    
+      .experience-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  section{
+    padding:10rem 3% 2rem;
+
+  }
+  .timeline-item::before{
+
+    left:7px;
+  }
+  .timeline-item:nth-child(odd){
+    padding-right:0 ;
+    text-align: left;
+
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
+    padding-left: 37px;
+  }
+  .timeline-dot{
+    left:0;
+  }
+  .experience{
+    padding-bottom: 7rem;
+  }
+  .testimonials.wrapper{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .footer{
+    padding:2rem 3%;
+    
+    
+  }
+
+
+@media(max-width:895px)
+{
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position:absolute;
+    top:100%;
+    right:0;
+    width:50%;
+    padding:1rem 3%;
+    background:rgba(0,0,0,8.8);
+    backdrop-filter:blur(20px);
+    border: bottom left redius 2rem;
+    border-left:2px solid var(--main-color);
+    border-bottom:2px solid var(--main-color);
+    display:none;
+  }
+  .navbar.active{
+    display:block;
+
+  }
+  .navbar a{
+    display :block;
+    font-size:2rem;
+    margin:3rem 0;
+    color:white;
+  }
+  .home{
+    flex-direction:column-reverse;
+    margin:5rem 4rem;
+  }
+  .home-content h3{
+    font-size:2.6rem;
+
+  }
+  .home-content h1{
+    font-size:8rem;
+    margin-top:3rem;
+
+  }
+  .home-content p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.home-img img{
+  width:56vw;
+}
+.experience h2{
+  margin-bottom: 3rem;
+
+}
+.experience-container{
+  grid-template-columns: repeat(1.1fr);
+}
+
+}
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+@media (max-width: 768px) {
+  .experience-container, .wrapper {
+      grid-template-columns: 1fr;
+  }
+}
+a:focus, button:focus {
+  outline: 2px dashed var(--main-color);
+  outline-offset: 4px;
+}
+
+/* Base styles for the navbar */
+.navbar {
+  display: none; /* Hidden by default */
+  flex-direction: column; /* Stack menu items vertically */
+  gap: 1.5rem;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%; /* Full width on mobile */
+  background: var(--second-bg-color); /* Optional background */
+  padding: 1rem;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+}
+
+/* Show the navbar when 'active' class is applied */
+.navbar.active {
+  display: flex;
+}
+
+/* Menu icon styles */
+#menu-icon {
+  cursor: pointer;
+  font-size: 2rem;
+}
+/* Navbar styles for larger screens (always visible) */
+@media (min-width: 768px) {
+  #menu-icon {
+    display: none; /* Hide menu icon */
+  }
+  .navbar {
+    display: flex; /* Always visible */
+    flex-direction: row; /* Align items horizontally */
+    gap: 2rem;
+    position: static; /* Reset positioning */
+    background: none; /* Remove background */
+    padding: 0;
+  }
+
+}
+
+
